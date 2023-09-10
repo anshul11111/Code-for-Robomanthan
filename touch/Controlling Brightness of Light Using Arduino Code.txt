@@ -1,0 +1,24 @@
+int yellow=9;
+int button=4;
+
+void setup(){
+  pinMode(button,INPUT);
+  pinMode(yellow,OUTPUT);
+}
+
+void loop(){
+  if(digitalRead(button)==HIGH){
+    for(int x=0;x=255;x++){
+       analogWrite(yellow,x);
+       delay(100);
+    }
+  
+  }
+  else{
+    digitalWrite(yellow,HIGH);
+    delay(100);
+    digitalWrite(yellow,LOW);
+    delay(100);
+    
+  }
+}
